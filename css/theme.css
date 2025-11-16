@@ -16,18 +16,14 @@ body {
     background-color: var(--background);
 }
 .code-example {
-    overflow: auto;
     background-color: var(--color-white);
     border: 1px solid var(--color-gray-100);
     border-radius: 4px;
 }
-.code-example > code {
-    display: block;
-}
 .label {
-    font-size: 0.75rem;
+    font-weight: bold;
+    font-size: 12px;
     padding: var(--spacing-xs);
-    padding-bottom: 0;
 }
 code {
     font-family: 'Courier New', Courier, monospace;

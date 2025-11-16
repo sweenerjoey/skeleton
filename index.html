@@ -34,8 +34,95 @@
       <section class="block">
         <div class="container">
           <h2>CSS Grid</h2>
-          <p>My biggest critique of Gamache's Skeleton is that the 12-column grid isn't built using actual CSS grid functionality. My Skeleton.CSS addresses this by creating a mobile-first CSS grid that starts at 4 columns and expands to 12 columns as screen size increases. Along the way, utility classes that are device-specific allow you to place the direct children of a div with the <code>.grid</code> class onto the grid.</p>
-          <p>The utility classes follow a simple naming syntax, detailed in the next section. Most of the utility classes are aliased under various names, allowing you to use values like "thirds" and "quarters" as well as targeting specific gridlines.</p>
+          <p>My biggest critique of Gamache's Skeleton is that the 12-column grid isn't built using actual CSS grid functionality. Skeleton.CSS addresses this by creating a mobile-first CSS grid that starts at 4 columns and expands to 12 columns as screen size increases. Along the way, utility classes that are device-specific allow you to place the direct children of a div with the <code>grid</code> class onto the grid.</p>
+          <p>The utility classes follow a simple naming syntax. Most of the utility classes are aliased under various names, allowing you to use named values like "thirds" and "quarters" as well as the specific gridline numbers.</p>
+        </div>
+        <div class="container grid">
+          <div class="mobile-span-4 span-12 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-1 span-1 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-3 span-11 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-2 span-2 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-2 span-10 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-3 span-3 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-1 span-9 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-4 span-4 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-4 span-8 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-1 span-5 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-3 span-7 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-2 span-6 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-half span-half center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-3 span-7 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-1 span-5 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-all span-two-third center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-all span-third center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-1 span-three-quarter center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-3 span-quarter center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-half span-10 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-half span-2 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-3 span-11 center code-example">
+            <p class="label">A</p>
+          </div>
+          <div class="mobile-span-1 span-1 center code-example">
+            <p class="label">B</p>
+          </div>
+          <div class="mobile-span-all span-all center code-example">
+            <p class="label">A</p>
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <div class="container">
+          <h2>CSS Flexboxes</h2>
+          <p>Like with the grid utility classes, the same applies to flexboxes. Add class <code>flex</code> to any element to enable flexbox, and then use additional utility classes to customize the flexbox's behavior. Mobile and desktop can even have different settings using the same approach as the grids.</p>
+          <hr>
+        </div>
+        <div class="container flex mobile-flex-columns flex-rows center stretch">
+          <p class="label code-example">Multiple elements...</p>
+          <p class="label code-example">...can exist in a single container...</p>
+          <p class="label code-example">...with behaviors set using...</p>
+          <p class="label code-example">...utility classes.</p>
         </div>
       </section>
     </main>
