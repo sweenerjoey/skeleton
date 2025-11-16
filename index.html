@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton.CSS – Joey Sweener on GitHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="center">
+          <h1>Joey Sweener's Skeleton.CSS</h1>
+          <p>Lightweight, mobile-first infrastructure for web projects.</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="block">
+        <div class="container">
+          <h2>About Skeleton.CSS</h2>
+          <p>Inspired by <a href="http://getskeleton.com/" target="_blank">Dave Gamache's framework of the same name</a>, Skeleton.CSS uses a selection of intuitive utility classes to provide basic functionality for CSS grids and flexboxes, and establishes a basic spacing scale. No visual characteristics are applied through Skeleton.CSS, allowing users to build their own type scales, buttons styles, or entire design systems on top of the basic framework.</p>
+          <hr>
+        </div>
+      </section>
+      <section class="block">
+        <div class="container">
+          <h2>CSS Grid</h2>
+          <p>My biggest critique of Gamache's Skeleton is that the 12-column grid isn't built using actual CSS grid functionality. My Skeleton.CSS addresses this by creating a mobile-first CSS grid that starts at 4 columns and expands to 12 columns as screen size increases. Along the way, utility classes that are device-specific allow you to place the direct children of a div with the <code>.grid</code> class onto the grid.</p>
+          <p>The utility classes follow a simple naming syntax, detailed in the next section. Most of the utility classes are aliased under various names, allowing you to use values like "thirds" and "quarters" as well as targeting specific gridlines.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="block footer">
+      <div class="container center">
+       <p>Created by <a href="https://jsweener.carrd.co/" target="_blank">Joey Sweener</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

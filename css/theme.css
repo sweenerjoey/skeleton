@@ -1,0 +1,75 @@
+:root {
+    --text-color: #262626;
+    --link-color: var(--text-color);
+    --link-color-hover: #E82356;
+    --background: #ededed;
+    --color-white: white;
+    --color-gray-100: #ccc;
+    --source-sans: "Source Sans 3", Arial, sans-serif;
+    --font-large: clamp(2.25rem,4vw,4rem);
+    --spacing-base-value: clamp(16px, 2vw, 20px);
+}
+html {
+    font-size: var(--spacing-base-value);
+}
+body {
+    background-color: var(--background);
+}
+.code-example {
+    overflow: auto;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-100);
+    border-radius: 4px;
+}
+.code-example > code {
+    display: block;
+}
+.label {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs);
+    padding-bottom: 0;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    padding: var(--spacing-xs);
+    background-color: var(--color-white);
+    font-size: 0.875rem;
+}
+h1 {
+    font-family: var(--source-sans);
+    font-weight: 400;
+    font-size: var(--font-large);
+    line-height: 100%;
+    letter-spacing: -0.035rem;
+}
+h2 {
+    font-family: var(--source-sans);
+    font-weight: 500;
+    padding-bottom: var(--spacing-xs);
+}
+p {
+    font-family: var(--source-sans);
+    line-height: 165%;
+    padding-bottom: var(--spacing-xs);
+}
+p a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px !important;
+    text-decoration-color: var(--link-color-hover);
+    transition: all 0.3s ease;
+}
+p a:hover {
+    color: var(--link-color-hover);
+    text-decoration-color: transparent;
+}
+.header {
+    padding-top: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xl);
+}
+.footer {
+    margin-top: var(--spacing-xl) !important;
+    background-color: var(--color-white);
+}
