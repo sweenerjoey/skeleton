@@ -7,10 +7,7 @@
     --color-gray-100: #ccc;
     --source-sans: "Source Sans 3", Arial, sans-serif;
     --font-large: clamp(2.25rem,4vw,4rem);
-    --spacing-base-value: clamp(16px, 2vw, 20px);
-}
-html {
-    font-size: var(--spacing-base-value);
+    --base-value: clamp(16px, 1.75vw, 20px);
 }
 body {
     background-color: var(--background);
@@ -23,12 +20,12 @@ body {
 .label {
     font-weight: bold;
     font-size: 12px;
-    padding: var(--spacing-xs);
+    padding: var(--spacing-50);
 }
 code {
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
-    padding: var(--spacing-xs);
+    padding: var(--spacing-50);
     background-color: var(--color-white);
     font-size: 0.875rem;
 }
@@ -42,12 +39,12 @@ h1 {
 h2 {
     font-family: var(--source-sans);
     font-weight: 500;
-    padding-bottom: var(--spacing-xs);
+    padding-bottom: var(--spacing-50);
 }
 p {
     font-family: var(--source-sans);
     line-height: 165%;
-    padding-bottom: var(--spacing-xs);
+    padding: var(--spacing-50) 0;
 }
 p a {
     color: var(--link-color);
@@ -57,13 +54,16 @@ p a {
     text-decoration-color: var(--link-color-hover);
     transition: all 0.3s ease;
 }
+hr {
+    margin: var(--spacing-100) 0;
+}
 p a:hover {
     color: var(--link-color-hover);
     text-decoration-color: transparent;
 }
 .header {
-    padding-top: var(--spacing-xxl);
-    padding-bottom: var(--spacing-xl);
+    padding-top: var(--spacing-600);
+    padding-bottom: var(--spacing-400);
 }
 .footer {
     margin-top: var(--spacing-xl) !important;

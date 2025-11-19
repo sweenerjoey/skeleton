@@ -18,8 +18,10 @@
     <header class="header">
       <div class="container">
         <div class="center">
-          <h1>Joey Sweener's Skeleton.CSS</h1>
-          <p>Lightweight, mobile-first infrastructure for web projects.</p>
+          <hgroup>
+            <h1>Joey Sweener's Skeleton.css</h1>
+            <p>Lightweight, mobile-first infrastructure for web projects.</p>
+          </hgroup>
         </div>
       </div>
     </header>
@@ -34,91 +36,130 @@
       <section class="block">
         <div class="container">
           <h2>CSS Grid</h2>
-          <p>My biggest critique of Gamache's Skeleton is that the 12-column grid isn't built using actual CSS grid functionality. Skeleton.CSS addresses this by creating a mobile-first CSS grid that starts at 4 columns and expands to 12 columns as screen size increases. Along the way, utility classes that are device-specific allow you to place the direct children of a div with the <code>grid</code> class onto the grid.</p>
-          <p>The utility classes follow a simple naming syntax. Most of the utility classes are aliased under various names, allowing you to use named values like "thirds" and "quarters" as well as the specific gridline numbers.</p>
+          <p>Any container can be assigned grid functionality using the class <code>grid</code>. The grid is mobile-first, starting at 4 columns and expanding to 12 at larger screen sizes. Various classes assigned in the HTML to direct children of the grid determine the item's placement, starting from mobile size up. All children of the grid must have at least one mobile class assigned, or it will default to spanning a single column at every breakpoint.</p>
+          <p>The grid classes follow a simple naming syntax. Most of the utility classes are aliased under various names, allowing you to use named values like "thirds" and "quarters" as well as numbers 1–12.</p>
         </div>
         <div class="container grid">
-          <div class="mobile-span-4 span-12 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-1 span-1 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-3 span-11 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-2 span-2 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-2 span-10 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-3 span-3 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-1 span-9 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-4 span-4 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-4 span-8 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-1 span-5 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-3 span-7 center code-example">
-            <p class="label">B</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-2 span-6 center code-example">
-            <p class="label">A</p>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
-          <div class="mobile-span-half span-half center code-example">
-            <p class="label">B</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-3 span-7 center code-example">
-            <p class="label">A</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-1 span-5 center code-example">
-            <p class="label">B</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-all span-two-third center code-example">
-            <p class="label">A</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-all span-third center code-example">
-            <p class="label">B</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-1 span-three-quarter center code-example">
-            <p class="label">A</p>
+          <div class="span-2">
+            <p class="label code-example center">span-2</p>
           </div>
-          <div class="mobile-span-3 span-quarter center code-example">
-            <p class="label">B</p>
+          <div class="span-3">
+            <p class="label code-example center">span-3</p>
           </div>
-          <div class="mobile-span-half span-10 center code-example">
-            <p class="label">A</p>
+          <div class="span-1 md-span-3">
+            <p class="label code-example center">span-1, md-span-3</p>
           </div>
-          <div class="mobile-span-half span-2 center code-example">
-            <p class="label">B</p>
+          <div class="span-1 md-span-3">
+            <p class="label code-example center">span-1, md-span-3</p>
           </div>
-          <div class="mobile-span-3 span-11 center code-example">
-            <p class="label">A</p>
+          <div class="span-3">
+            <p class="label code-example center">span-3</p>
           </div>
-          <div class="mobile-span-1 span-1 center code-example">
-            <p class="label">B</p>
+          <div class="span-4 md-span-4">
+            <p class="label code-example center">span-4, md-span-4</p>
           </div>
-          <div class="mobile-span-all span-all center code-example">
-            <p class="label">A</p>
+          <div class="span-4 md-span-4">
+            <p class="label code-example center">span-4, md-span-4</p>
+          </div>
+          <div class="span-4 md-span-4">
+            <p class="label code-example center">span-4, md-span-4</p>
+          </div>
+          <div class="span-half">
+            <p class="label code-example center">span-half</p>
+          </div>
+          <div class="span-half">
+            <p class="label code-example center">span-half</p>
+          </div>
+          <div class="span-4 md-span-7">
+            <p class="label code-example center">span-4, md-span-7</p>
+          </div>
+          <div class="span-4 md-span-5">
+            <p class="label code-example center">span-4, md-span-5</p>
+          </div>
+          <div class="span-2 md-span-8">
+            <p class="label code-example center">span-2, md-span-8</p>
+          </div>
+          <div class="span-2 md-span-4">
+            <p class="label code-example center">span-2, md-span-4</p>
+          </div>
+          <div class="span-3 md-span-9">
+            <p class="label code-example center">span-3, md-span-9</p>
+          </div>
+          <div class="span-1 md-span-3">
+            <p class="label code-example center">span-1, md-span-3</p>
+          </div>
+          <div class="span-3 md-span-10">
+            <p class="label code-example center">span-3, md-span-10</p>
+          </div>
+          <div class="span-1 md-span-2">
+            <p class="label code-example center">span-1, md-span-2</p>
+          </div>
+          <div class="span-3 md-span-11">
+            <p class="label code-example center">span-3, md-span-11</p>
+          </div>
+          <div class="span-1">
+            <p class="label code-example center">span-1</p>
           </div>
         </div>
       </section>
       <section class="block">
         <div class="container">
           <h2>CSS Flexboxes</h2>
-          <p>Like with the grid utility classes, the same applies to flexboxes. Add class <code>flex</code> to any element to enable flexbox, and then use additional utility classes to customize the flexbox's behavior. Mobile and desktop can even have different settings using the same approach as the grids.</p>
+          <p>Add class <code>flex</code> to any container to enable flexbox, and then use additional classes to customize the flexbox's behavior. The same principles of class naming to grid applies here: specify things like flex-direction per breakpoint.</p>
           <hr>
         </div>
-        <div class="container flex mobile-flex-columns flex-rows center stretch">
+        <div class="container flex flex-col md-flex-row center stretch">
           <p class="label code-example">Multiple elements...</p>
           <p class="label code-example">...can exist in a single container...</p>
           <p class="label code-example">...with behaviors set using...</p>
@@ -128,7 +169,7 @@
     </main>
     <footer class="block footer">
       <div class="container center">
-       <p>Created by <a href="https://jsweener.carrd.co/" target="_blank">Joey Sweener</a>.</p>
+       <p>Created by <a href="https://jsweener.carrd.co/" target="_blank">Joey Sweener</a> in 2025.</p>
       </div>
     </footer>
   </body>
