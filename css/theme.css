@@ -1,71 +1,105 @@
 :root {
-    --text-color: #262626;
-    --link-color: var(--text-color);
-    --link-color-hover: #E82356;
-    --background: #ededed;
-    --color-white: white;
-    --color-gray-100: #ccc;
-    --source-sans: "Source Sans 3", Arial, sans-serif;
-    --font-large: clamp(2.25rem,4vw,4rem);
-    --base-value: clamp(16px, 1.75vw, 20px);
+    --base-value: clamp(16px, 1.5vw, 18px);
+
+    --color-primary: #E82356;
+    --color-white: #ffffff;
+    --color-gray-100: #ededed;
+    --color-gray-200: #adadad;
+    --color-gray-300: #545454;
+    --color-gray-400: #262626;
+    --color-black: #080b0c;
+    --color-black-trans: rgb(from var(--color-black) r g b / 0.5);
+    --color-black-gradient: linear-gradient(180deg, var(--color-black-trans) 50%, var(--color-black));
+
+    --font-sans: "Nunito Sans", system-ui, Arial, sans-serif;
+    --font-serif: "Newsreader", Georgia, Times, serif;
+    --font-size-12: calc(var(--base-value) * 0.75);
+    --font-size-16: var(--base-value);
+    --font-size-24: calc(var(--base-value) * 1.5);
+    --font-size-32: calc(var(--base-value) * 2);
+    --font-size-48: calc(var(--base-value) * 3);
+
+    --line-height-base: 1;
+    --line-height-single: var(--line-height-base);
+    --line-height-150: calc(var(--line-height-base) * 1.5);
+    --line-height-double: calc(var(--line-height-base) * 2);
+    --letter-spacing-tighter: -0.1rem;
+    --letter-spacing-tight: -0.01rem;
+    --letter-spacing-normal: 0;
+    --letter-spacing-loose: 0.05rem;
+    --letter-spacing-looser: 0.15rem;
+}
+html {
+    font-size: var(--base-value);
 }
 body {
-    background-color: var(--background);
-}
-.code-example {
-    background-color: var(--color-white);
-    border: 1px solid var(--color-gray-100);
-    border-radius: 4px;
-}
-.label {
-    font-weight: bold;
-    font-size: 12px;
-    padding: var(--spacing-50);
-}
-code {
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    padding: var(--spacing-50);
-    background-color: var(--color-white);
-    font-size: 0.875rem;
+    background-color: var(--color-gray-100);
 }
 h1 {
-    font-family: var(--source-sans);
-    font-weight: 400;
-    font-size: var(--font-large);
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: var(--font-size-48);
     line-height: 100%;
-    letter-spacing: -0.035rem;
+    letter-spacing: var(--letter-spacing-tight);
 }
 h2 {
-    font-family: var(--source-sans);
+    font-family: var(--font-sans);
     font-weight: 500;
     padding-bottom: var(--spacing-50);
 }
+h3 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-size-12);
+    letter-spacing: var(--letter-spacing-loose);
+}
 p {
-    font-family: var(--source-sans);
-    line-height: 165%;
+    font-family: var(--font-sans);
+    line-height: var(--line-height-150);
     padding: var(--spacing-50) 0;
 }
+p + p {
+    padding-bottom: var(--spacing-50);
+}
 p a {
-    color: var(--link-color);
+    color: var(--color-black);
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px !important;
-    text-decoration-color: var(--link-color-hover);
+    text-decoration-color: var(--color-primary);
     transition: all 0.3s ease;
+}
+p a:hover {
+    color: var(--color-primary);
+    text-decoration-color: transparent;
+}
+code {
+    padding: 6px 8px;
+    font-size: var(--font-size-12);
+    background-color: var(--color-white);
 }
 hr {
     margin: var(--spacing-100) 0;
 }
-p a:hover {
-    color: var(--link-color-hover);
-    text-decoration-color: transparent;
+.version {
+    padding: var(--spacing-50);
+    font-size: var(--font-size-12);
+}
+.version > .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-50);
+    color: var(--color-black);
+
 }
 .header {
     padding-top: var(--spacing-600);
     padding-bottom: var(--spacing-400);
 }
 .footer {
-    margin-top: var(--spacing-xl) !important;
+    margin-top: var(--spacing-400) !important;
     background-color: var(--color-white);
 }
