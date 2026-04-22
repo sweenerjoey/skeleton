@@ -1,7 +1,7 @@
 /*
-* Joey Sweener's Skeleton.css V 2.1.0
-* Copyright 2025 Joey Sweener
-* 01/29/2026
+* Joey Sweener's Skeleton.css V 1.0.0
+* Copyright 2026 Joey Sweener
+* Last updated April 2026
 */
 
 :root { 
@@ -42,7 +42,7 @@ html {
 img {
     width: var(--full-width); /* Sets the width of images to be 100% the size of their containers. Can be overwritten in theme.css if this causes issues. */
 }
-.block { /* Meaning "building block," this can be applied to any section, container, div, etc. to give it some basic padding and transition properties. More specific container classes can be defined in theme.css and applied in HTML. */
+.block { /* Meaning "building block," this can be applied to any section, container, div, etc. to give it some basic padding and transition properties. More specific container classes can (and should!) be defined in theme.css and applied in HTML. */
     transition: all 300ms;
     position: relative;
     margin: 0 auto;
@@ -84,7 +84,11 @@ img {
 .span-3, .span-three-quarter, .span-three-quarters {
     --grid-span: span calc((var(--grid-columns) / var(--grid-columns)) * 3);
 }
-.span-4, .span-all {
+.span-4 {
+    --grid-span: span var(--grid-columns);
+}
+.span-all {
+    --grid-column-start: 1;
     --grid-span: span var(--grid-columns);
 }
 @media ( min-width: 48rem ) { /* Tablet 768 */
